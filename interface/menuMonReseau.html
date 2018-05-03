@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+			<body>
+		<div id='content'>
+			<?php
+				include($content);
+			?>
+		<nav><!-- On va rajouter notre menu du haut avec les volets qui s'ouvrent quand la souris passe dessus ! -->
+			<ul>
+				<li class="menuAccueil"><a href="Accueil.html">Acceuil</a></li>
+				<li class="MonProfil"><a href="MonProfil.html">Mon Profil </a></li>
+						<ul class="sousMenu">
+							<li ><a href="#">Messagerie</a></li>
+							<li ><a href="#">Modifier Votre Profil</a></li>
+							<li ><a href="#">Preferences</a></li>
+
+						</ul>
+
+				<li class="menuMonReseau"><a href="menuReseau.html">Mon Reseau de Contacts</a></li>
+						<ul class="sousMenu">
+							<li ><a href="#">Mes Contacts</a></li>
+							<li ><a href="#">Mes Offres D'emplois</a></li>
+							
+					</ul>
+				<li class="menuEmplois"><a href="Emplois.html">Emplois</a></li>
+					<ul class="sousMenu">
+						<li ><a href="#">Demandes D'emplois</a></li>
+						<li ><a href="#">Les offres d'emplois et Stages</a>    </li></ul>
+			</ul>
+			
+		</nav>
+	</body>
+</html>

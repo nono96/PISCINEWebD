@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Acceuil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+ 
+  
+  <!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Acceuil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+ <!-- On va rajouter notre menu du haut avec les volets qui s'ouvrent quand la souris passe dessus !
+et on va faire ca pour toutes nos pages ! pour naviguer entre les pages plus facilement-->
+  <html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+		<body>
+		
+			<?php
+				include($content);
+			?>
+		<nav><!-- On va rajouter notre menu du haut avec les volets qui s'ouvrent quand la souris passe dessus ! -->
+			<ul>
+				<li class="menuAccueil"><a href="Acceuil.html">Acceuil</a></li>
+				<li class="MonProfil"><a href="MonProfil.html">Mon Profil </a></li>
+				<li class="menuMonReseau"><a href="menuReseau.html">Mon Reseau de Contacts</a></li>
+						
+				<li class="menuEmplois"><a href="Emplois.html">Emplois</a></li>
+					
+                <li class="menuEmplois"><a href="#">Messagerie</a></li>
+					
+                <li class="menuEmplois"><a href="#">Notifications</a></li>
+					<ul class="sousMenu">
+						</ul>
+                <li class="SeDeconnecterBoutonMenu"><a href="#">Se Déconnecter</a></li>
+           </ul>	
+			
+		</nav>
+            <!-- Maintenant on va organiser notre page d'acceuil, avec le fil d'actualité, une messagerie rapide...! -->
+            
+           <!-- <section> <!-- Va créer un cadre, et faciliter la mise en page 
+                <h2>Fil d'actualité :</h2>
+                
+            
+            </section>     !-->
+    
+    <div id="colonne1">
+        <div class="FIL"> 
+            <h1> Fil d'Actualité</h1>
+            <div id="filtrer">
+                <label for='Filtrer' >Filtrer</label>
+                <select name="Filtrer">
+		              <option value="OffresEmplois">Offres d'emplois</option>
+		              <option value="DemandesEmplois">Demande d'emplois</option>
+	           </select><br/><br/>
+            </div>  </div>
+        <div id="colonne1">
+       
+            <h4 id="AClig1Status">Nouveau Statut ? </h4>  </br>              
+            <textarea id="AClig1TxtArea" rows="1" cols="50" name"NewStatus"></textarea> 
+            </div>
+         <div class="FIL"> 
+             <?-- ici on mettra les réponses de la bases sql sur les dernieres actualités des contatcs --?>
+        </div>
+        </div>
+            
+    <div id="colonne2">
+            <h1>Mon Profil</h1>
+            <h3 id="ACDerniersMessages1"><a href="#">Invitations</a></li> </br>
+            <a href="#">Vos Contacts</a></li> </br>
+            <a href="#">Vos Amis</a></li> </br>
+    
+            <a href="#"Vos Evenements</a></li> </br>
+    </br></h3>
+            
+    </div>
+   <!-- <div id="colonne2">
+            <h1>News</h1>
+    </div> !-->
+ 
+      
+           
+
+            
+     </div>
+
+          
+     </div>
+
+    </body>
+</html>
+</body>
+</html>
+</body>
+</html>

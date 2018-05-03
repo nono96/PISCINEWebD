@@ -1,0 +1,101 @@
+<!--<?php
+	
+	if(isset($_POST['submit']))
+	{
+		echo $sexe=$_POST['sexe'].'</br>';
+		echo $nom=$_POST['nom'].'</br>';
+		echo $prenom=$_POST['prenom'].'</br>';
+		echo $naissance=$_POST['naissance'].'</br>';
+		echo $email=$_POST['email'].'</br>';
+		echo $mdp=$_POST['mdp'].'</br>';
+		echo $description=$_POST['description'].'</br>';
+?>-->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+	<body>
+		<div id='content'>
+			<?php
+				include($content);
+			?>
+		<nav><!-- On va rajouter notre menu du haut avec les volets qui s'ouvrent quand la souris passe dessus ! -->
+			<ul>
+				<li class="menuAccueil"><a href="Acceuil.html">Acceuil</a></li>
+				<li class="MonProfil"><a href="MonProfil.html">Mon Profil </a></li>
+				<li class="menuMonReseau"><a href="menuReseau.html">Mon Reseau de Contacts</a></li>
+						
+				<li class="menuEmplois"><a href="Emplois.html">Emplois</a></li>
+					
+                <li class="menuEmplois"><a href="#">Messagerie</a></li>
+					
+                <li class="menuEmplois"><a href="#">Notifications</a></li>
+					<ul class="sousMenu">
+						</ul>
+                <li class="SeDeconnecterBoutonMenu"><a href="#">Se Déconnecter</a></li>
+           </ul>
+			 <div id="colonne1MonProfil">
+                <div class="ssMenu">
+                 <p >Accédez à :</p>
+				<li ><a href="ProfilPreferences.html">Vos Préférences</a></li> </br>
+              <li ><a href="ModifierProfil.html">Modifiez Votre Profil</a></li> </br>
+              <li ><a href="ProfilAjouterPhotos.html">Ajouter des photos à votre album !</a></li> </br>
+                <li ><a href="ProfilAjouterExp.html">Ajouter une Expérience Professionnelle</a></li> </br>
+                <li ><a href="ProfilAjouterDiplome.html">Ajouter un diplôme</a></li> </br>
+                <li ><a href="ProfilValiderCompetences.html">Valider une Compétence d'un collaborateur</a></li> </br>
+                <li ><a href="ModifPhotoProfil.html">Changez votre photo de profil</a></li> </br>
+   
+                </div>
+            </div>
+            <div id="colonne2MonProfil">
+                <h1>Modifiez Votre Profil</h1>
+                <h3 id="MPTitreInfo"> Remplissez les champs que vous souhaitez modifier:</h3>
+                
+<form method='POST' action=''>
+ 
+    
+	
+    </br></br>
+
+	<label for="nom">Nom:</label>
+	<input type="text" name="nom"/></br>
+    <input type="submit" value="Modifiez Votre Nom" name="ModifNom"/><br/>
+	<br/>
+    <label for="prenom">Prenom:</label>
+	<input type="text" name="prenom"/></br>
+    <input type="submit" value="Modifiez Votre Prénom" name="ModifPrenom"/>
+	<br/><br/>
+    <label for="naissance">Date de naissance:</label>
+	<input type="date" name="naissance"/><br/>
+    <input type="submit" value="ModifDateNaissance" name="submit"/>
+	<br/><br/>
+    <label for="email">Email:</label>
+	<input type="text" name="email"/><br/>
+    <input type="submit" value="Modifier votre adresse Emaol" name="ModifEmail"/><br/><br/> 
+
+	<label for="mdp">Changez votre Mot de passe:</label>
+	<input type="password" name="mdp"/><br/>
+    
+
+	<label for="repeatmdp">Confirmation du mot de passe:</label>
+	<input type="password" name="repeatmdp"/><br/>
+    <input type="submit" value="Modifiez Votre mot de passe" name="ModifMotDePasse"/><br/><br/>
+	
+
+	<label for="description">Changez Votre Description</label>
+	<textarea rows="6" cols="30" name="description"></textarea><br/>
+    <input type="submit" value="Modifiez Votre Description" name="ModifDescription"/>
+	
+
+
+
+</form>
+            </div> 
+
+		</nav>
+	</body>
+</html>

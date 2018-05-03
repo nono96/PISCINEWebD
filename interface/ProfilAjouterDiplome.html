@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon Profil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+	<body>
+		<div id='content'>
+			<?php
+				include($content);
+			?>
+		<nav><!-- On va rajouter notre menu du haut avec les volets qui s'ouvrent quand la souris passe dessus ! -->
+			<ul>
+				<li class="menuAccueil"><a href="Acceuil.html">Acceuil</a></li>
+				<li class="MonProfil"><a href="MonProfil.html">Mon Profil </a></li>
+				<li class="menuMonReseau"><a href="menuReseau.html">Mon Reseau de Contacts</a></li>
+						
+				<li class="menuEmplois"><a href="Emplois.html">Emplois</a></li>
+					
+                <li class="menuEmplois"><a href="#">Messagerie</a></li>
+					
+                <li class="menuEmplois"><a href="#">Notifications</a></li>
+					<ul class="sousMenu">
+						</ul>
+                <li class="SeDeconnecterBoutonMenu"><a href="#">Se Déconnecter</a></li>
+           </ul>
+			
+		</nav>
+            <div id="colonne1MonProfil">
+                <div class="ssMenu">
+                <p>Accédez à :</p>
+				<li ><a href="ProfilPreferences.html">Vos Préférences</a></li> </br>
+	            <li ><a href="ModifierProfil.html">Modifiez Votre Profil</a></li> </br>
+	            <li ><a href="ProfilAjouterPhotos.html">Ajouter des photos à votre album !</a></li> </br>
+                <li ><a href="ProfilAjouterExp.html">Ajouter une Expérience Professionnelle</a></li> </br>
+                <li ><a href="ProfilAjouterDiplome.html">Ajouter un diplôme</a></li> </br>
+                <li ><a href="ProfilValiderCompetences.html">Valider une Compétence d'un collaborateur</a></li> </br>
+                <li ><a href="ModifPhotoProfil.html">Changez votre photo de profil</a></li> </br>
+                
+   
+            </div>
+         </div>
+            <div id="colonne2MonProfil">
+                <h1>Vos Diplômes</h1>
+                
+                   
+                    
+                </div>
+     </div>
+	</body>
+</html>
