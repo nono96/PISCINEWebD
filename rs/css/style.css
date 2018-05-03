@@ -1,0 +1,70 @@
+*
+{
+	padding:0;/*enlever la marge*/
+	margin:0;/*enlever le padding*/
+}
+body
+{
+	background-color:#000;/*fond noir*/
+	front-family:arial; 
+}
+#content
+{
+	width:960px;
+	background-color: #FFF;
+	margin:100px  auto;
+	text-align: center;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	position: relative;
+
+
+}
+
+#content h1
+{
+	text-decoration:underline;/*souliger le titre*/
+	padding-bottom:20px;
+}
+
+#content form label
+{
+	display.block;
+	float:left;
+	left:100px;
+	width:200px;
+	position:absolute;/*ajuster a la fenetre qd on redimensionne*/
+	
+}
+
+#content form input,textarea
+{
+	border:1px solid#000;
+	border-radius:5px;/*arrondir bords des text area*/
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	width:200px;
+	margin:5px;
+
+
+}
+
+#content form input[type=submit]
+{
+	width:100px;
+	background-color:#000;
+	color:#FFF;
+	cursor:pointer;/*afficher la main quand on va sur le bouton*/
+}
+
+#content .error/*tuto youtube part 4*/
+{
+	color:red;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	margin:2px auto;
+	width:300px;
+	background-color:#CCC;
+}
