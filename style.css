@@ -1,0 +1,389 @@
+
+{
+	padding:0;
+	margin:0;
+} 
+body
+{
+	background-color: beige;
+	front-family:'source code pro',calibri, serif;
+    
+} /*
+#content
+{
+	width:960px;
+	background-color: #C6B2B6 ;
+	margin:10px ;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-border-radius:100 px;
+	position: relative;
+}
+#Content h1
+{
+	text-decoration:underline;
+	text-decoration-color: blue;
+	padding: 10 px;
+}
+
+#Content form label
+{
+display: block;
+float: left;
+width: 500 px;
+
+}
+
+
+#Content form input, textarea;
+{
+	border: 1px,#000;
+	border-radius: 5px;
+	widows: 200 px;
+	-webkit-border-radius:5px;
+	margin: 5px;
+
+
+} */
+
+/* On va créer le volet de menu qui se trouvera en haut du site :); 
+Pas réussi a mettre ce foutu menu déroulant... 
+https://www.youtube.com/watch?v=cWrmoGwQ1iE
+A réessayer dans la semaine si j'ai un peu de temps ! 
+*/
+nav{
+	width: 100%; /* Histoire d'avoir une longue bande de menu*/
+	background-color: #75906E;
+}
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+nav > ul > li > a {
+    padding: 20px 30px;
+    color: #FFF;
+}
+nav >  ul > li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+nav li {
+    list-style-type: none;
+} 
+.sousMenu {
+    display: none;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover .sousMenu {
+    display: block; /* Le problème des sous menus doit se trouver ici! 
+                        demander à quelqu'un un peu d'aide...*/
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.sousMenu li {
+    border-bottom: 1px solid #CCC;
+} 
+.sousMenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+.menuAccueil:hover {
+    border-top: 5px solid #e44d26;
+    background-color: RGBA(228,77,38,0.15);
+}
+.menu-css:hover {
+    border-top: 5px solid #0070bb;
+    background-color: RGBA(000,112,192,0.15);
+}
+.menuMonReseau:hover {
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBA(241,211,79,0.15);
+}
+.menuEmplois:hover {
+    border-top: 5px solid #BBB;
+    background-color: RGBA(220,220,220,0.15);
+}
+.MonProfil:hover {
+    border-top: 5px solid #BBB;
+    background-color: RGBA(220,220,220,0.15);
+}
+.MonProfil .sousMenu {
+    background-color: RGB(230,100,40);
+}
+.menuEmplois .submenu {
+    background-color: RGB(000,160,240);
+}
+.SeDeconnecterBoutonMenu
+{
+    float: right;
+}
+.SeDeconnecterBoutonMenu:hover{
+    border-top: 5 px solid #e44d26;
+    background-color: red;
+    
+}
+/* A terminer... 
+
+Maintenant, on va mettre une image en fond d'écran, choisie ultérieurement par l'utilisateur!
+
+https://www.youtube.com/watch?v=ghvPZcoJx_o
+*/ 
+/* Maintneant je vais m'occuper du fil d'actualité de ma page Acceuil! 
+*/ /*
+#fil{
+    width: 100%
+	background-color: #C6B2B6 ;
+	margin:10px ;
+	text-align: left;
+	border-radius: 10px;
+	-webkit-border-radius:100 px;
+	position: relative;
+} */
+
+
+/* Histoire D'enjoliver mon h1 */ 
+h1
+{
+  font-size: 32px;
+  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+  padding:16px;
+  font-weight:lighter;
+  -moz-box-shadow: 2px 2px 6px #888;  
+  -webkit-box-shadow: 2px 2px 6px #888;  
+  box-shadow:2px 2px 6px #888;  
+  text-align:center;
+  display:block;
+  margin:16px;
+  background-image:url(images/background-h1-wood.jpg);  
+}
+h4#AClig1Status{
+    font-weight: normal;
+    text-decoration-color: beige;
+    margin-left: 12%;
+    text-col
+    display: inline-flex;
+    background-color: beige;
+    float: left;
+    text-align: center;
+}
+textarea#AClig1TxtArea{
+    float: right;
+    
+    display: inline-flex;
+}
+
+
+h3#ACDerniersMessages1{
+    text-align: center;
+    font-weight: normal;
+}
+div#colonne1 {
+	float: left;
+	width: 70%;
+	background: lightblue;
+    background-color: beige;
+}
+div#colonne2 {
+	float: right;
+	width: 30%;
+	background: beige;
+}
+div#ligne1{
+    float: left;
+	
+	background: lightblue;
+    display: flex;
+    background-color: green;
+    block
+    
+    
+}
+.ssMenu{
+    margin: 10 px;
+    text-decoration-color: blue;
+    text-align: center;
+}
+div#colonne1MonProfil{
+    float: left;
+	width: 20%;
+	background: beige;   
+}
+div#colonne2MonProfil{
+    float: right;
+	width: 80%;
+	background: beige;
+    margin-right: 1 %;
+}
+
+
+ /* https://www.cssdebutant.com/coder-en-css-les-padding-en-css.html */
+/* https://www.alsacreations.com/article/lire/53-guide-de-survie-du-positionnement-css.html */
+
+
+div#filtrer{
+   /*  padding-right: 60 %; Histoire que le bouton se trouve sur la droit :) comprend pas pq cette fonction elle marche pas je remplacte par text algin... */
+    
+    text-align: right;
+    
+    fron-size: 1 px;
+}
+
+div#Status{
+    
+    background-color:white;
+    position: relative;
+    
+    
+    text-align: left;
+    width:70%;
+    
+    z-index:10;
+    
+} 
+.BandeauEnd{
+    background-color:#00BC64;
+    position:absolute;
+    bottom:0px;
+    margin-bottom:0px;
+    left:0px;
+    height:30px;
+    width:100%;
+    overflow:hidden;
+    z-index:10;
+
+} 
+h4{
+    front-size: 60 px;
+    width: 150%
+	background-color: blue;
+	
+	text-align: center;
+	padding-bottom: 0%;
+    margin-bottom: 0%;
+   
+}
+.News{
+    front-size: 60 px;
+    width: 150%
+	background-color: green;
+	margin:10 px ;
+	text-align: left;
+	border-radius: 10px;
+	-webkit-border-radius:100 px;
+    z-index: 1000;
+}
+
+
+/*Je m'occupe maintenant de la mise en page de la page mon profil dans vos informations personnelles ! 
+Mes infos c'est pour les infos personelles !'
+je commence a avoir beaucop de classe et d'id, je décide ducoup
+de nommer mes classes/id en les nommant au début par MP si la classe sert dans Mon Profil par exemple :) '*/
+.MPmesInfos{
+    font-size= 15 px;
+    margin-left: 10%;
+     line-height:50px;
+    list-style-type: none; /* Histoiere de retirer tous les petits points devant nom, prenom etc... */
+    
+}
+h3#MPTitreInfo{
+    margin-left: 4%;
+    font-size: 500 px;
+    text-decoration-color: aquamarine;
+    font-weight: normal;
+    text-decoration: underline;
+     
+}
+p{
+    margin-left: 5 px;
+}
+
+/*JE m'occupe du formulaire qui permet de mdifier le profil ! */
+form{
+    margin-left: auto;
+    background-color: beige;
+    text-align: center;
+    line-height: 10 px;
+    margin-top: 50 px;
+}
+input[type=submit] {
+ 
+ margin-top:15px;
+ cursor:pointer;
+ }
+
+/* Style pour le BootStrap de connexion ! */
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+	
+.omb_login .omb_socialButtons a {
+	color: white; // In yourUse @body-bg 
+	opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}			
+
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
